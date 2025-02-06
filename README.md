@@ -44,23 +44,27 @@ Why use .pkl files:
 
 ## How to save and load a model in Python using Pickle:
 Saving a model:
-    import pickle
-    from sklearn.ensemble import RandomForestRegressor
-    
-    # Assume 'model' is your trained machine learning model
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)  # Example training
-    
-    # Save the model to a file
-    with open('model.pkl', 'wb') as f:
-        pickle.dump(model, f)
+```python
+import pickle
+from sklearn.ensemble import RandomForestRegressor
+
+# Assume 'model' is your trained machine learning model
+model = RandomForestRegressor()
+model.fit(X_train, y_train)  # Example training
+
+# Save the model to a file
+with open('model.pkl', 'wb') as f:
+    pickle.dump(model, f)
+```
 
 Loading a model:
-    import pickle
-    
-    # Load the model from a file
-    with open('model.pkl', 'rb') as f:
-        loaded_model = pickle.load(f)
-    
-    # Use the loaded model to make predictions
-    predictions = loaded_model.predict(X_test)
+```python
+import pickle
+
+# Load the model from a file
+with open('model.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
+
+# Use the loaded model to make predictions
+predictions = loaded_model.predict(X_test)
+```
