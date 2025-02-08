@@ -67,4 +67,8 @@ with open('model.pkl', 'rb') as f:
 
 # Use the loaded model to make predictions
 predictions = loaded_model.predict(X_test)
+
+## Dataset / Model File
+[Download my_model.pkl from Google Drive](https://drive.google.com/file/d/1BLcA8qg-MTRPMxVhFZ1L8ZXefBiDZ45M/view?usp=drive_link)
+
 ```
